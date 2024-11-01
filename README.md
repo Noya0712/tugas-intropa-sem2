@@ -14,18 +14,18 @@ admin
 ![](public/image/1.jpg)
 
 mahasiswa
-![](public/image/2 reg maha.jpg)
+![](public/image/2%20reg%20maha.jpg)
 
 POST
 admin
-![](public/image/add mahasiswa.jpg)
+![](public/image/add%20mahasiswa.jpg)
 
 mahasiswa
-![](public/image/add maha filed.jpg)
+![](public/image/add%20maha%20filed.jpg)
 
 DELETE
 mahasiswa
-![](public/image/delete maha.jpg)
+![](public/image/delete%20maha.jpg)
 
 ## About Laravel
 
