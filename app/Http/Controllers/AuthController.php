@@ -2,8 +2,10 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
+
 
 class AuthController extends Controller
 {
@@ -55,6 +57,16 @@ class AuthController extends Controller
         // Mengembalikan token
         return response()->json(['token' => $token], 200);
     }
+
+    public function handle(Request $request, Closure $next)
+    {
+        if ($request->user()->role !== 'admin') {
+            return response()->json(['message' => 'Unauthorized'], 403);
+        }
+
+        return $next($request);
+    }
+
 
 
 
